@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weaving Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Weaving Quiz</h1>
+        <div class="question" id="question1">
+            <p>1. The two sets of threads used in weaving in the picture are ______and ______</p>
+            <button class="response" onclick="checkAnswer(1, 'A')">A) Warp and weft</button>
+            <button class="response" onclick="checkAnswer(1, 'B')">B) Horizontal and vertical</button>
+            <button class="response" onclick="checkAnswer(1, 'C')">C) Black and white</button>
+            <button class="response" onclick="checkAnswer(1, 'D')">D) Rows and columns</button>
+            <span class="feedback" id="feedback1"></span>
+        </div>
+        <div class="question" id="question2">
+            <p>2. The tool used in weaving is a_____</p>
+            <button class="response" onclick="checkAnswer(2, 'A')">A) Oven</button>
+            <button class="response" onclick="checkAnswer(2, 'B')">B) Loom</button>
+            <button class="response" onclick="checkAnswer(2, 'C')">C) Kiln</button>
+            <button class="response" onclick="checkAnswer(2, 'D')">D) Thread</button>
+            <span class="feedback" id="feedback2"></span>
+        </div>
+        <div class="question" id="question3">
+            <p>3. __________are the horizontal threads on a loom.</p>
+            <button class="response" onclick="checkAnswer(3, 'A')">A) Warp</button>
+            <button class="response" onclick="checkAnswer(3, 'B')">B) White</button>
+            <button class="response" onclick="checkAnswer(3, 'C')">C) Weft</button>
+            <button class="response" onclick="checkAnswer(3, 'D')">D) Black</button>
+            <span class="feedback" id="feedback3"></span>
+        </div>
+        <div class="question" id="question4">
+            <p>4. The process of passing thread over and under another thread on a loom is referred to as _________. </p>
+            <button class="response" onclick="checkAnswer(4, 'A')">A) Weaving</button>
+            <button class="response" onclick="checkAnswer(4, 'B')">B) Stitching</button>
+            <button class="response" onclick="checkAnswer(4, 'C')">C) Pleating</button>
+            <button class="response" onclick="checkAnswer(4, 'D')">D) Decorating</button>
+            <span class="feedback" id="feedback4"></span>
+        </div>
+        <div id="result"></div>
+        <button onclick="resetQuiz()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
